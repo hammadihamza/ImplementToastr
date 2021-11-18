@@ -1,0 +1,55 @@
+#Success {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#Success:hover {
+  background-color: #45a049;
+}
+#Error {
+  background-color: #f44336; /* Red */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#Error:hover {
+  background-color: #ea3c3c;
+}
+
+#Warning {
+  background-color: #ff9800; /* Orange */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#Warning:hover {
+  background-color: #f57f17;
+}
+
+#info {
+  background-color: #00bcd4; /* Blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#info:hover {
+  background-color: #00acc1;
+}

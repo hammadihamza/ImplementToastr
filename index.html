@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="toastr.min.css" />
+    <title>Toaster</title>
+  </head>
+
+  <body>
+    <button type="button" id="Success">Click</button>
+    <button type="button" id="Error">Click</button>
+    <button type="button" id="info">Click</button>
+    <button type="button" id="Warning">Click</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="toastr.min.js"></script>
+    <script>
+      $("#Success").on("click", function () {
+        toastr.options = {
+          closeButton: true,
+          debug: false,
+          newestOnTop: false,
+          progressBar: false,
+          positionClass: "toast-top-right",
+          preventDuplicates: true,
+          onclick: null,
+          showDuration: "300",
+          hideDuration: "10000",
+          timeOut: "10000",
+          extendedTimeOut: "1000",
+          showEasing: "swing",
+          hideEasing: "linear",
+          showMethod: "fadeIn",
+          hideMethod: "fadeOut",
+        };
+        Command: toastr["success"]("Have fun storming the castle!");
+      });
+
+      $("#Error").on("click", function () {
+        Command: toastr["error"]("Error Man!!");
+
+        toastr.options = {
+          closeButton: false,
+          debug: false,
+          newestOnTop: true,
+          progressBar: false,
+          positionClass: "toast-top-right",
+          preventDuplicates: true,
+          showDuration: "300",
+          hideDuration: "10000",
+          timeOut: "10000",
+          extendedTimeOut: "1000",
+          showEasing: "swing",
+          hideEasing: "linear",
+          showMethod: "fadeIn",
+          hideMethod: "fadeOut",
+        };
+      });
+
+      $("#info").on("click", function () {
+        Command: toastr["info"]("This is a info message!");
+        toastr.options = {
+          closeButton: true,
+          debug: false,
+          newestOnTop: true,
+          progressBar: false,
+          positionClass: "toast-top-right",
+          preventDuplicates: true,
+          showDuration: "300",
+          hideDuration: "10000",
+          timeOut: "10000",
+          extendedTimeOut: "1000",
+          showEasing: "swing",
+          hideEasing: "linear",
+          showMethod: "fadeIn",
+          hideMethod: "fadeOut",
+        };
+      });
+
+      $("#Warning").on("click", function () {
+        Command: toastr["warning"]("This is a warning message!");
+        toastr.options = {
+          closeButton: false,
+          debug: false,
+          newestOnTop: true,
+          progressBar: false,
+          positionClass: "toast-top-right",
+          preventDuplicates: true,
+          showDuration: "300",
+          hideDuration: "10000",
+          timeOut: "10000",
+          extendedTimeOut: "1000",
+          showEasing: "swing",
+          hideEasing: "linear",
+          showMethod: "fadeIn",
+          hideMethod: "fadeOut",
+        };
+      });
+    </script>
+  </body>
+</html>
